@@ -1,0 +1,41 @@
+@media(max-width:700px) {
+    .game {
+        padding: 10px;
+    }
+
+    .figure-container {
+        flex-direction: column;
+    }
+
+    .user-field,
+    .comp-field {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-field {
+        margin-bottom: 20px;
+    }
+
+    .user-field::before {
+        content: "Игрок:";
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .comp-field::before {
+        content: "Компьютер:";
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .game h1 {
+        font-size: 20px;
+    }
+}
