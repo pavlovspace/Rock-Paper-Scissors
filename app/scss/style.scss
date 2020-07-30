@@ -63,12 +63,12 @@ body {
 }
 
 .count-user::before {
-    content: "Игрок";
+    content: "Gracz";
     left: -5px;
 }
 
 .count-comp::before {
-    content: "Комп";
+    content: "Komputer";
     right: -5px;
 }
 
@@ -201,7 +201,7 @@ body {
     }
 
     .user-field::before {
-        content: "Игрок:";
+        content: "Gracz:";
         display: block;
         width: 100%;
         font-size: 20px;
@@ -209,7 +209,7 @@ body {
     }
 
     .comp-field::before {
-        content: "Компьютер:";
+        content: "Komputer:";
         display: block;
         width: 100%;
         font-size: 20px;
