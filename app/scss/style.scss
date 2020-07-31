@@ -7,7 +7,7 @@
 }
 
 body {
-    background: rgb(0, 8, 83);
+    background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +24,7 @@ body {
     max-width: 700px;
     padding: 50px;
     border-radius: 3px;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #305fb1 100%);
 }
 
 .game h1 {
@@ -103,11 +104,11 @@ body {
 }
 
 .field.active {
-    background-color: green;
+    background-color: rgb(1, 131, 1);
 }
 
 .field.error {
-    background-color: red;
+    background-color: rgb(253, 0, 0);
 }
 
 .comp-field {
@@ -144,7 +145,7 @@ body {
 
 @keyframes blink {
     100% {
-        background-color: green;
+        background-color: rgb(1, 131, 1);
     }
 }
 
@@ -156,22 +157,34 @@ body {
 .buttons button {
     margin: 0 8px;
     cursor: pointer;
-    border: none;
-    border-radius: 30px;
+    background: none;
+    border: 2px solid;
+    border-radius: 10px;
     color: #fff;
-    text-transform: uppercase;
-    padding: 10px 20px;
+    border-bottom-width: 4px;
+    letter-spacing: inherit;
+    margin: 1em;
+    padding: 1em 2em;
+    text-transform: inherit;
+    transition: color 1s;
+    outline: none;
     font-weight: bold;
     font-size: 16px;
-    box-shadow: 2px 3px 0 #0c4e00;
-    transition: .2s;
-    outline: none;
 }
 
 .buttons button:hover,
 .buttons button:active {
-    transform: translate(1px, 1px);
-    box-shadow: 1px 1px 0 #0c4e00;
+    animation: halftone 1s forwards;
+    background: radial-gradient(circle, #126e01 0.2em, transparent 0.25em) 0 0 / 1.25em 1.25em, radial-gradient(circle, #126e01 0.2em, transparent 0.25em) 6.25em 6.25em / 1.25em 1.25em;
+    color: #fff;
+    transform: translate(1px, 2px);
+    box-shadow: 1px 1px 0 #083300;
+}
+
+@keyframes halftone {
+    100% {
+        background-size: 2.375em 2.375em, 0.1em 0.1em;
+    }
 }
 
 .play {
