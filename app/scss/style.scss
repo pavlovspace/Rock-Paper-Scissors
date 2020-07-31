@@ -192,13 +192,29 @@ body {
 }
 
 
-@media(max-width:700px) {
+@media(max-width:900px) {
     .game {
         padding: 10px;
+        max-height: 320px;
+
+        h1 {
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        h3 {
+            display: none;
+        }
+    }
+
+    .buttons {
+        padding: 10px 15px;
+        text-align: center;
     }
 
     .figure-container {
         flex-direction: column;
+        padding: 0px 20px;
     }
 
     .user-field,
@@ -210,26 +226,37 @@ body {
     }
 
     .user-field {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     .user-field::before {
         content: "Gracz:";
         display: block;
         width: 100%;
-        font-size: 20px;
         text-align: center;
+        font-size: 14px;
     }
 
     .comp-field::before {
         content: "Komputer:";
         display: block;
         width: 100%;
-        font-size: 20px;
         text-align: center;
+        font-size: 14px;
     }
 
-    .game h1 {
-        font-size: 20px;
+    .counter-block {
+        margin: 0px auto;
+        padding: 10px;
+    }
+
+    .field {
+        width: 50px;
+        height: 50px;
+    }
+
+    .buttons button {
+        margin: 0em;
     }
 }
